@@ -32,7 +32,10 @@
             this.commandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_SousFormulaire = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            this.pn_SousFormulaire.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -61,10 +64,22 @@
             // 
             // pn_SousFormulaire
             // 
-            this.pn_SousFormulaire.Location = new System.Drawing.Point(0, 28);
+            this.pn_SousFormulaire.Controls.Add(this.pictureBox1);
+            this.pn_SousFormulaire.Location = new System.Drawing.Point(0, 27);
             this.pn_SousFormulaire.Name = "pn_SousFormulaire";
-            this.pn_SousFormulaire.Size = new System.Drawing.Size(990, 477);
+            this.pn_SousFormulaire.Size = new System.Drawing.Size(990, 478);
             this.pn_SousFormulaire.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.BackgroundImage = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires;
+            this.pictureBox1.Image = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires;
+            this.pictureBox1.Location = new System.Drawing.Point(196, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(518, 397);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -75,9 +90,11 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.pn_SousFormulaire.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +106,7 @@
         private System.Windows.Forms.ToolStripMenuItem commandeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeDesCommandesToolStripMenuItem;
         private System.Windows.Forms.Panel pn_SousFormulaire;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
