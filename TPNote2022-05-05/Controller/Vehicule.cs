@@ -17,6 +17,7 @@ namespace TPNote2022_05_05.Controller
         private string couleur;
         private DateTime datecommande;
         private Connection conn;
+        private DataTable dtListeVehicule;
         #endregion
         #region Accesseur
         public int Idcouleur
@@ -49,8 +50,7 @@ namespace TPNote2022_05_05.Controller
         {
             Int32 reponse = 0;
             string rqtSql = "INSERT INTO `commande` (`IDCOMMANDE`, `DATECOMMANDE`, `IDCOULEUR`) VALUES (NULL, '" + datecommande.ToString() + "', " + idcouleur + "); ";
-
-           
+                       
                 try
                 {
                     conn = new Connection();
@@ -69,8 +69,28 @@ namespace TPNote2022_05_05.Controller
             return reponse;
         }
         #endregion
-        #region Affichage
+        #region Affichage Liste Véhicule
+        public DataTable GetListeVehicule()
+        {
+            dtListeVehicule = new DataTable();
 
+            Connection conn = new Connection();
+            try
+            {
+                using (MySqlCommand cmd = new MySqlCommand("select * FROM commande;", conn.connection))
+                {
+                    conn.connection.Open();
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    dtListeVehicule.Load(reader);
+
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
+            }
+            return dtListeVehicule;
+        }
         #endregion
     }
 }
