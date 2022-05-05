@@ -48,7 +48,7 @@ namespace TPNote2022_05_05.Controller
         public Int32 InserCommande()
         {
             Int32 reponse = 0;
-            string rqtSql = "INSERT INTO `partie` (`IDCOMMANDE`, `IDCOULEUR`) VALUES (NULL, " + idcouleur + "); ";
+            string rqtSql = "INSERT INTO `commande` (`IDCOMMANDE`, `DATECOMMANDE`, `IDCOULEUR`) VALUES (NULL, '" + datecommande.ToString() + "', " + idcouleur + "); ";
 
            
                 try
