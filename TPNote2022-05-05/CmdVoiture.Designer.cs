@@ -35,6 +35,11 @@
             this.Couleur = new System.Windows.Forms.Label();
             this.cmb_Couleur = new System.Windows.Forms.ComboBox();
             this.pn_client = new System.Windows.Forms.Panel();
+            this.btn_Valider = new System.Windows.Forms.Button();
+            this.txt_ville = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_codePostal = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txt_prenom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_adresse = new System.Windows.Forms.TextBox();
@@ -47,11 +52,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chb_Chien = new System.Windows.Forms.CheckBox();
             this.chb_CoffreToit = new System.Windows.Forms.CheckBox();
-            this.txt_codePostal = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_ville = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btn_Valider = new System.Windows.Forms.Button();
             this.btn_Close = new System.Windows.Forms.Button();
             this.pn_client.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -124,6 +124,48 @@
             this.pn_client.Name = "pn_client";
             this.pn_client.Size = new System.Drawing.Size(451, 347);
             this.pn_client.TabIndex = 6;
+            // 
+            // btn_Valider
+            // 
+            this.btn_Valider.Location = new System.Drawing.Point(179, 303);
+            this.btn_Valider.Name = "btn_Valider";
+            this.btn_Valider.Size = new System.Drawing.Size(128, 23);
+            this.btn_Valider.TabIndex = 10;
+            this.btn_Valider.Text = "Valider la commande";
+            this.btn_Valider.UseVisualStyleBackColor = true;
+            this.btn_Valider.Click += new System.EventHandler(this.btn_Valider_Click);
+            // 
+            // txt_ville
+            // 
+            this.txt_ville.Location = new System.Drawing.Point(179, 197);
+            this.txt_ville.Name = "txt_ville";
+            this.txt_ville.Size = new System.Drawing.Size(216, 20);
+            this.txt_ville.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(93, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Ville : ";
+            // 
+            // txt_codePostal
+            // 
+            this.txt_codePostal.Location = new System.Drawing.Point(179, 159);
+            this.txt_codePostal.Name = "txt_codePostal";
+            this.txt_codePostal.Size = new System.Drawing.Size(216, 20);
+            this.txt_codePostal.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(93, 166);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Code postal : ";
             // 
             // txt_prenom
             // 
@@ -240,47 +282,6 @@
             this.chb_CoffreToit.TabIndex = 12;
             this.chb_CoffreToit.Text = "Coffre de toit";
             this.chb_CoffreToit.UseVisualStyleBackColor = true;
-            // 
-            // txt_codePostal
-            // 
-            this.txt_codePostal.Location = new System.Drawing.Point(179, 159);
-            this.txt_codePostal.Name = "txt_codePostal";
-            this.txt_codePostal.Size = new System.Drawing.Size(216, 20);
-            this.txt_codePostal.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(93, 166);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Code postal : ";
-            // 
-            // txt_ville
-            // 
-            this.txt_ville.Location = new System.Drawing.Point(179, 197);
-            this.txt_ville.Name = "txt_ville";
-            this.txt_ville.Size = new System.Drawing.Size(216, 20);
-            this.txt_ville.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(93, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Ville : ";
-            // 
-            // btn_Valider
-            // 
-            this.btn_Valider.Location = new System.Drawing.Point(179, 303);
-            this.btn_Valider.Name = "btn_Valider";
-            this.btn_Valider.Size = new System.Drawing.Size(128, 23);
-            this.btn_Valider.TabIndex = 10;
-            this.btn_Valider.Text = "Valider la commande";
-            this.btn_Valider.UseVisualStyleBackColor = true;
             // 
             // btn_Close
             // 

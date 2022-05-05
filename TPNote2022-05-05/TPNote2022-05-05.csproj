@@ -104,6 +104,7 @@
     <Compile Include="CmdVoiture.Designer.cs">
       <DependentUpon>CmdVoiture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller\Couleur.cs" />
     <Compile Include="Controller\Vehicule.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
