@@ -1,6 +1,6 @@
 ﻿namespace TPNote2022_05_05
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -61,6 +61,7 @@
             this.listeDesCommandesToolStripMenuItem.Name = "listeDesCommandesToolStripMenuItem";
             this.listeDesCommandesToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
             this.listeDesCommandesToolStripMenuItem.Text = "Liste des commandes";
+            this.listeDesCommandesToolStripMenuItem.Click += new System.EventHandler(this.listeDesCommandesToolStripMenuItem_Click);
             // 
             // pn_SousFormulaire
             // 
@@ -81,7 +82,7 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,7 +90,7 @@
             this.Controls.Add(this.pn_SousFormulaire);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
