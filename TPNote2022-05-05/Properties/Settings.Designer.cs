@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TPNote2022_05_05.Properties
+namespace TPNote.Properties
 {
 
 

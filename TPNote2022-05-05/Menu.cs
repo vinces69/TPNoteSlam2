@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TPNote2022_05_05.Modele;
+using TPNote.Modele;
 
-namespace TPNote2022_05_05
+namespace TPNote
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
         SousFormulaire SF;
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
             SF = new SousFormulaire(pn_SousFormulaire);
@@ -23,6 +23,11 @@ namespace TPNote2022_05_05
         private void commandeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SF.openChildForm(new CmdVoiture());
+        }
+
+        private void listeDesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SF.openChildForm(new ListeCmd());
         }
     }
 }

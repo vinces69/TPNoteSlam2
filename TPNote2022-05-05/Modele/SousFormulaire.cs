@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace TPNote2022_05_05.Modele
+namespace TPNote.Modele
 {
     public class SousFormulaire
     {

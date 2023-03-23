@@ -1,6 +1,6 @@
-﻿namespace TPNote2022_05_05
+﻿namespace TPNote
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -61,9 +61,11 @@
             this.listeDesCommandesToolStripMenuItem.Name = "listeDesCommandesToolStripMenuItem";
             this.listeDesCommandesToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
             this.listeDesCommandesToolStripMenuItem.Text = "Liste des commandes";
+            this.listeDesCommandesToolStripMenuItem.Click += new System.EventHandler(this.listeDesCommandesToolStripMenuItem_Click);
             // 
             // pn_SousFormulaire
             // 
+            this.pn_SousFormulaire.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pn_SousFormulaire.Controls.Add(this.pictureBox1);
             this.pn_SousFormulaire.Location = new System.Drawing.Point(0, 27);
             this.pn_SousFormulaire.Name = "pn_SousFormulaire";
@@ -73,15 +75,15 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.BackgroundImage = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires;
-            this.pictureBox1.Image = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires;
+            this.pictureBox1.Image = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires1;
             this.pictureBox1.Location = new System.Drawing.Point(196, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(518, 397);
+            this.pictureBox1.Size = new System.Drawing.Size(568, 373);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,7 +91,7 @@
             this.Controls.Add(this.pn_SousFormulaire);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
