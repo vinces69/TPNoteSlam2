@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TPNote2022_05_05.Controller;
+using TPNote.Controller;
 
-namespace TPNote2022_05_05
+namespace TPNote
 {
     public partial class CmdVoiture : Form
     {

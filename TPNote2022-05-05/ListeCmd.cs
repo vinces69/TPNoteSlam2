@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TPNote2022_05_05
+namespace TPNote
 {
     public partial class ListeCmd : Form
     {

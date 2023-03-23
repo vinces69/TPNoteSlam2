@@ -1,4 +1,4 @@
-﻿namespace TPNote2022_05_05
+﻿namespace TPNote
 {
     partial class Menu
     {
@@ -65,6 +65,7 @@
             // 
             // pn_SousFormulaire
             // 
+            this.pn_SousFormulaire.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pn_SousFormulaire.Controls.Add(this.pictureBox1);
             this.pn_SousFormulaire.Location = new System.Drawing.Point(0, 27);
             this.pn_SousFormulaire.Name = "pn_SousFormulaire";
@@ -74,11 +75,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.BackgroundImage = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires;
-            this.pictureBox1.Image = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires;
+            this.pictureBox1.Image = global::TPNote2022_05_05.Properties.Resources.logo_cars_mobi_hires1;
             this.pictureBox1.Location = new System.Drawing.Point(196, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(518, 397);
+            this.pictureBox1.Size = new System.Drawing.Size(568, 373);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

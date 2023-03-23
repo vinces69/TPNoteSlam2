@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace TPNote2022_05_05.Modele
+namespace TPNote.Modele
 {
     class Connection
     {

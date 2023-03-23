@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TPNote2022_05_05.Modele;
+using TPNote.Modele;
 
-namespace TPNote2022_05_05
+namespace TPNote
 {
     public partial class Menu : Form
     {

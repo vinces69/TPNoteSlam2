@@ -1,4 +1,4 @@
-﻿namespace TPNote2022_05_05
+﻿namespace TPNote
 {
     partial class ListeCmd
     {
